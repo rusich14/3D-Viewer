@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>S3</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0
+    }
+
+    .wrap {
+      height: 800px;
+      width: 1000px;
+      margin: 20px;
+      box-shadow: 0 0 10px 0;
+    }
+
+    #viewer {
+      height: 100%;
+      width: 100%;
+    }
+
+    canvas {
+      display: block;
+      outline: none;
+      cursor: pointer;
+    }
+  </style>
+  <script src="js/three.min.js"></script>
+  <script src="js/OBJLoader2.js"></script>
+  <script src="js/MTLLoader.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div
+    id="viewer"
+    data-src="models/DCA_Vantage_Analyzer"
+  ></div>
+</div>
+</body>
+</html>
